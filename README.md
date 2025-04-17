@@ -1,1 +1,1 @@
-# O-MINE-Artifact-EuroSP25
+# OMINE-Artifact-EuroSP25
