@@ -1,1 +1,1 @@
-# O-MINE-Artifact-EuroS-P25
+# O-MINE-Artifact-EuroSP25
