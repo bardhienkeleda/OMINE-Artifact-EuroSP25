@@ -1,0 +1,104 @@
+
+{
+    "devices": {
+        "device:s1": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:50001?device_id=1",
+                "driver": "stratum-bmv2",
+                "pipeconf": "org.dataplane.pipelines.forward1.bmv2"
+            }
+        },
+        "device:s2": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:50002?device_id=1",
+                "driver": "stratum-bmv2",
+                "pipeconf": "org.dataplane.pipelines.forward2.bmv2"
+            }
+        },
+        "device:s3": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:50003?device_id=1",
+                "driver": "stratum-bmv2",
+                "pipeconf": "org.dataplane.pipelines.forward3.bmv2"
+            }
+        },
+        "device:s4": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:50004?device_id=1",
+                "driver": "stratum-bmv2",
+                "pipeconf": "org.dataplane.pipelines.forward4.bmv2"
+            }
+        },
+        "device:s5": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:50005?device_id=1",
+                "driver": "stratum-bmv2",
+                "pipeconf": "org.dataplane.pipelines.forward5.bmv2"
+            }
+        },
+        "device:s6": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:50006?device_id=1",
+                "driver": "stratum-bmv2",
+                "pipeconf": "org.dataplane.pipelines.forward6.bmv2"
+            }
+        },
+        "device:s7": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:50007?device_id=1",
+                "driver": "stratum-bmv2",
+                "pipeconf": "org.dataplane.pipelines.forward7.bmv2"
+            }
+        }, 
+        "device:s8": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:50008?device_id=1",
+                "driver": "stratum-bmv2",
+                "pipeconf": "org.dataplane.pipelines.forward8.bmv2"
+            }
+        },
+        "device:s9": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:50009?device_id=1",
+                "driver": "stratum-bmv2",
+                "pipeconf": "org.dataplane.pipelines.forward9.bmv2"
+            }
+        },
+        "device:s10": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:50010?device_id=1",
+                "driver": "stratum-bmv2",
+                "pipeconf": "org.dataplane.pipelines.forward10.bmv2"
+            }
+        },    
+
+        "device:s11": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:50011?device_id=1",
+                "driver": "stratum-bmv2",
+                "pipeconf": "org.dataplane.pipelines.forward11.bmv2"
+            }
+        },
+        "device:s12": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:50012?device_id=1",
+                "driver": "stratum-bmv2",
+                "pipeconf": "org.dataplane.pipelines.forward12.bmv2"
+            }
+        },
+        "device:s13": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:50013?device_id=1",
+                "driver": "stratum-bmv2",
+                "pipeconf": "org.dataplane.pipelines.forward13.bmv2"
+            }
+        },
+        "device:s14": {
+            "basic": {
+                "managementAddress": "grpc://127.0.0.1:50014?device_id=1",
+                "driver": "stratum-bmv2",
+                "pipeconf": "org.dataplane.pipelines.forward14.bmv2"
+            }
+        }
+    }
+}

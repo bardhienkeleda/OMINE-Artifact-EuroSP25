@@ -1,0 +1,9 @@
+#!/bin/bash
+
+TF_IMG=${TF_IMG:-registry.gitlab.com/dataplane-ai/taurus/platform-bm:tensorflow}
+TF_MOUNT_DIR=${TF_MOUNT_DIR:-$PWD}
+
+docker run --rm \
+    -v "$TF_MOUNT_DIR":/workdir -w /workdir \
+    -e TF_ENABLE_ONEDNN_OPTS=0 \
+    ${TF_IMG} "$@"

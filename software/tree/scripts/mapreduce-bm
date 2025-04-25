@@ -1,0 +1,15 @@
+#!/bin/bash
+
+MAPREDUCE_BM_DOCKER_NAME=${MAPREDUCE_BM_DOCKER_NAME:-mapreduce-bm}
+MAPREDUCE_BM_IMG=registry.gitlab.com/dataplane-ai/taurus/mapreduce-bm
+MAPREDUCE_BM_MOUNT_DIR=${MAPREDUCE_BM_MOUNT_DIR:-${PWD}}
+MAPREDUCE_BM_JAVA_OPTIONS=${MAPREDUCE_BM_JAVA_OPTIONS:-"-Xmx4g -Xss8912k -Xms2g"}
+
+docker run --rm -d --privileged \
+	--network=host \
+	--name mapreduce-bm \
+	-v "$MAPREDUCE_BM_MOUNT_DIR":/mount-dir \
+	-e MAPREDUCE_BM_ROOT_DIR=/root/mapreduce-bm \
+	-e _JAVA_OPTIONS="$MAPREDUCE_BM_JAVA_OPTIONS" \
+	-w /root/mapreduce-bm \
+	${MAPREDUCE_BM_IMG} bash -c "while true; do sleep 60; done"
